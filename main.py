@@ -80,6 +80,8 @@ def getWeather():
         type = res['data']['forecast'][0]['type']
     else:
         print("获取天气情况出错")
+        type = '多云'
+        K = K_dict["多云"]
 
 
 #获取北京时间确定随机步数&启动主函数
