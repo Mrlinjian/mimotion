@@ -55,6 +55,8 @@ headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
 #获取区域天气情况
 def getWeather():
     global K, type
+    type = "多云"
+    K = K_dict["多云"]
 #     url = 'http://wthrcdn.etouch.cn/weather_mini?city=' + area
 #     hea = {'User-Agent': 'Mozilla/5.0'}
 #     r = requests.get(url=url, headers=hea)
@@ -80,8 +82,7 @@ def getWeather():
 #         type = res['data']['forecast'][0]['type']
 #     else:
 #         print("获取天气情况出错")
-        type = '多云'
-        K = K_dict["多云"]
+
 
 
 #获取北京时间确定随机步数&启动主函数
